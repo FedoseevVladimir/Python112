@@ -1118,8 +1118,16 @@
 # result = finish - start
 # print(result)
 
-import time
-import locale #  ПЕРЕВОДИТ ПОД НУЖНУЮ СТРАНУ
-locale.setlocale(locale.LC_ALL, "") #  РОССИЯ
-print(time.strftime("Сегодня: %B %d, %Y", time.localtime())) #  Сегодня: Январь 31, 2022
-
+# import time
+# import locale #  ПЕРЕВОДИТ ПОД НУЖНУЮ СТРАНУ
+# locale.setlocale(locale.LC_ALL, "") #  РОССИЯ
+# print(time.strftime("Сегодня: %B %d, %Y", time.localtime())) #  Сегодня: Январь 31, 2022
+#
+# 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
+# echo "# Python112" >> README.md
+# git init
+# git add README.md
+# git commit -m "first commit"
+# git branch -M main
+# git remote add origin https://github.com/FedoseevVladimir/Python112.git
+# git push -u origin main
