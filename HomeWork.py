@@ -1,6 +1,7 @@
 # print("Hello World, I'am on GitHub")
 # sep=""   убирает пробелы
 
+
 def hello(name, word):  # аргументы
     print("Hello, ", name, ". Say ", word, sep="")
 
@@ -19,3 +20,9 @@ get_sum(x, y)
 get_sum("abc", "def")  # если слова то делается конкатенация
 get_sum(2.5, 4.3)
 # get_sum(2.5, "4.5")  # разные типы данных нельзя складывать
+
+print("Hello")
+print("Hello")
+print("Hello")
+print("Hello")
+
