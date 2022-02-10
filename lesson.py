@@ -485,3 +485,221 @@
 # m = a + f
 # print('m =', m)
 # print('0 =', zero(m))
+
+# t = (10, 11, [1, 2, 3], [4, 5, 6], ['hello', 'world'])
+# print(t, id(t))
+# t[4][0] = 'new'
+# t[4].append('hi')
+# print(t, id(t))
+
+# from random import randint
+
+#  выводит кортеж с уникальными элементами
+# def func(s):
+#     ls = []
+#     for i in s:
+#         if i not in ls:
+#             ls.append(i)
+#
+#     return tuple(reversed(ls))
+#
+#
+# a = [1, 2, 3, 3, 2]
+# print(func(a))
+
+# def func(s):
+#     ls = []
+#     [ls.append(i) for i in reversed(s) if i not in ls]
+#     return tuple(ls)
+#
+#
+# a = [1, 2, 3, 3, 2]
+# print(func(a))
+
+# t = (1, 2, 3)
+# # x = t[0]
+# # y = t[1]
+# # z = t[2]
+# x, y, z = t # распаковка кортежа
+# print(x, y, z)
+#
+#
+# def get_user():
+#     name = 'Tom'
+#     age = '22'
+#     is_married = False
+#     return name, age, is_married
+#
+#
+# user = get_user()
+# print(user)  # ('Tom', '22', False)
+# n, a, i = user
+# print(n, a, i)  # Tom 22 False
+# print(user[0])  # Tom
+
+# t = (1, 2, 3)
+# del t
+# print(t)
+
+# lst = [1, 2, 3, 4, 5]
+# print(type(lst))
+# print(lst)
+# tp = tuple(lst)
+# print(type(tp))
+# print(tp)
+
+# countries = (
+#     ('Germany', 80.2, (
+#         ('Berlin', 3.326),
+#         ('Hamburg', 1.718))
+#      ),
+#     ('France', 66, (('Paris', 2.2), ('Marcel', 1.6)))
+# )
+#
+# for country in countries:
+#     country_name, country_population, cities = country
+#     print('\n Страна:', country_name, 'Население =', country_population)
+#     for city in cities:
+#         city_name, city_population = city
+#         print('\tГород: ', city_name, 'Население = ', city_population)
+
+
+# s = {1, 2, 1, 2, 3, 2, 3, 8}
+# print(type(s))
+# print(s)
+# # МНОЖЕСТВО (set)
+# print(len(s))
+
+# c = ['hello', 'hi']
+# a = set(c)
+# b = {'hello', 'hi'}
+# print(b)
+
+# s = {x for x in range(10) if x % 2 == 0}
+# print(list(s))
+
+# numbers = [1, 2, 2, 2, 3, 3, 4, 4, 5, 6]
+# print(list(set(numbers)))  # [1, 2, 3, 4, 5, 6]
+
+# def to_set(x):
+#     a = set(x)
+#     b = len(a)
+#     return a, b
+#
+#
+# z = [4, 5, 4, 6, 2, 9, 11, 3, 4, 2]
+# print(to_set(z))
+
+# t = {'red', 'green', 'blue'}
+# # print('green' in t)
+# for i in t:
+#     print(i, end=' ')  # blue red green
+
+# r = ['ab_1', 'ac_2', 'bc_1', 'bc_2']
+
+# ВАРИАНТЫ НАПИСАНИЯ В ОДНУ СТРОКУ
+# # [res for() if]
+# # [res if() else for()]
+# # [res if() else for() if]
+
+
+# a = {'A' + i[1:] if i[0] == 'a' else 'B' + i[1:] for i in r if i[1] == 'c'}
+# print(a)
+
+
+# a = {0, 1, 2, 3}
+# a.add(4)  # добавляет элемент в множество
+# a.remove(1)  # удаляет заданный элемент
+# num = 2
+# if num in a:
+#     a.remove(num)
+# a.discard(3)  # удаляет элемент если он там есть
+# a.pop()  # удаляет элемент с нулевым индексом
+# a.clear()  # отчистить множество, но переменная останется set()
+# print(a)
+
+
+# a = {0, 1, 2, 3}
+# b = {4, 3, 2, 1}
+# c = a.union(b)  # объединяет два множества
+# c = a | b  # та же запись функции a.union(b)
+# a |= b
+# c = a & b  # выводит только повторяющиеся элементы
+# c = a - b  # только элементы которые есть в а, но нету в b
+# c = a.copy()
+# print(c)
+
+# s1 = {1, 2}
+# s2 = {3}
+# s3 = {4, 5}
+# s4 = {3, 2, 6}
+# s5 = {6}
+# s6 = {7, 8}
+# s7 = {9, 8}
+# s = set(s1 | s2 | s3 | s4 | s5 | s6 | s7)
+# print(s)
+# print('elem count: ', len(s))
+# print('min: ', min(s))
+# print('max: ', max(s))
+# ВЫВОДИТ
+# {1, 2, 3, 4, 5, 6, 7, 8, 9}
+# elem count:  9
+# min:  1
+# max:  9
+
+
+# ВЫВОДИТ ОБЩИЕ БУКВЫ ДВУХ СТРОК
+# a = 'Hello'
+# b = 'How are you'
+# c = set(a) & set(b)
+# for i in c:
+#     print(i, end=' ')
+
+# print('Задание 1 элементы первой строки которые отсутствуют во второй строке')
+# a = 'Python'
+# print('Первая строка: ', a)
+# b = 'Programming language'
+# print('Вторая строка: ', b)
+# print('Искомыми буквами являются: ')
+# c = set(a) - set(b)
+# for i in c:
+#     print(i, end=' ')
+#
+# print('\n\nЗадание 2 выводит количество гласных в строке')
+# d = 'Hello world'
+# print(d)
+#
+#
+# def vowels(x):
+#     count = 0
+#     set_d = list(d)
+#     vowels_str = ['a', 'e', 'i', 'o', 'u', 'y']
+#     for i in x:
+#         if i in vowels_str:
+#             count += 1
+#     return count
+#
+#
+# print('Numbers of vowels: ', vowels(d))
+#
+# print('\n\nЗадание 3 общие элементы двух строк')
+# str1 = 'test'
+# print('Первая строка: ', str1)
+# str2 = 'string'
+# print('Вторая строка: ', str2)
+# letter = set(str1) | set(str2)
+# print('Искомые буквы: ')
+# for i in letter:
+#     print(i, end=' ')
+#
+# print('\n\nЗадание 4 только уникальные элементы двух строк')
+# str3 = 'hello'
+# print('Первая строка: ', str3)
+# str4 = 'world'
+# print('Вторая строка: ', str4)
+# letter1 = set(str3) | set(str4)
+# letter2 = set(str3) & set(str4)
+# l = letter1 - letter2
+# print('Искомые буквы: ')
+# for i in l:
+#     print(i, end=' ')
