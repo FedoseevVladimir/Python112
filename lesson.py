@@ -703,3 +703,198 @@
 # print('Искомые буквы: ')
 # for i in l:
 #     print(i, end=' ')
+
+# frozenset - вид множества которое не может быть изменено
+# s = frozenset([1, 2, 3, 4])
+# print(s)
+# a = frozenset({"Hello world"})
+# print(a)
+# b = frozenset({i ** 2 % 4 for i in range(10)})
+# print(b)
+
+
+#  dict (Словарь)
+
+
+# ls = ['один', 'два']
+# print(ls[0])
+# d = {'one': 'один', 'two': 'два'}
+# print(d['one'])
+
+
+# одно и то же
+# d = {}
+# d1 = dict()
+
+
+# два синтаксиса записи
+# d = {'one': 'один', 'two': 'два'}
+# print(d)
+# di = dict(one="один", two="два")
+# print(di)
+
+
+# d3 = dict.fromkeys(['a', 'b'], 100) # {'a': 100, 'b': 100}
+# print(d3)
+
+
+# users = (
+#     ('igor@gmail.com', 'Igor'),
+#     ('ann@gmail.com', 'Ann'),
+#     ('irina@gmail.com', 'Irina')
+# )
+# print(users)
+# d_users = dict(users)
+# print(d_users)
+
+
+# d4 = {i: i ** 2 for i in range(1, 7)}
+# print(d4)  # {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36}
+# print(d4[5])  # 25
+# d4[5] = 50 * 2
+# print(d4)  # {1: 1, 2: 4, 3: 9, 4: 16, 5: 100, 6: 36}
+
+
+# в качестве ключа нельзя использовать изменяемые данные, например список нельзя
+# d5 = {0: 'text1', 'one': 45, (1, 2, 3): 'кортеж', 42: [2, 3, 6, 7], True: 1}
+# print(d5[42][1])  # 3
+# print(d5[1, 2, 3])  # кортеж
+# del d5[1, 2, 3] # удаляет ключ и значение
+# print('one' in d5) # проверям есть ли ключ 'one' True
+# if 'one' in d5:
+#     print('True') # True
+
+
+# d5 = {0: 'text1', 'one': 45, (1, 2, 3): 'кортеж', 42: [2, 3, 6, 7], True: 1}
+# key = 'one1'
+# # if key in d5: # если такой ключ есть
+# #     del d5[key] # то удалить его из словаря
+# try:
+#     del d5[key]
+# except KeyError:
+#     print('Элемента с таким ключем нет в словаре')
+# print(d5)
+
+
+# d6 = {'one': 1, 'two': 2, 'three': 3}
+# for key in d6:
+#     print(key, '->', d6[key])
+# выводит:
+# one -> 1
+# two -> 2
+# three -> 3
+
+
+# перемножаем ключи словаря
+# d7 = {'x1': 3, 'x2': 7, 'x3': 5, 'x4': -1}
+# d = 1
+# for key in d7:
+#     d *= d7[key]
+# print(d)
+
+# d = dict()
+# d[1] = input('-> ')
+# d[2] = input('-> ')
+# d[3] = input('-> ')
+# d[4] = input('-> ')
+# print(d)
+
+# d1 = {i: input('-> ') for i in range(1, 5)}
+# print(d1)
+# a = int(input('Исключить: '))
+# del d1[a]
+# print(d1)
+
+# capitals = dict()
+# capitals['Россия'] = 'Москва'
+# capitals['Италия'] = 'Рим'
+# capitals['Испания'] = 'Мадрид'
+#
+# countries = ['Россия', 'Италия', 'Франция', 'Испания']
+# for country in countries:
+#     if country in capitals:
+#         print('Столица страны '+country+': '+capitals[country])
+#     else:
+#         print('В базе нет страны с названием: '+country)
+
+
+# меняю количество по ключу
+# goods = {'1': ['Core-i3-4330', 9, 4500],
+#          '2': ['Core-i5-4670', 3, 8500],
+#          '3': ['AMD FX-6300', 6, 3700],
+#          '4': ['Pentium G3220', 8, 2100],
+#          '5': ['Core-i5-3450', 5, 6400],
+#          }
+# for i in goods:
+#     print(i, ') ', goods[i][0], ' - ', goods[i][1], ' шт. ', goods[i][2], 'руб', sep='')
+#
+# while True:
+#     n = input('№: ')
+#     if n != '0':
+#         q = int(input("Количество: "))
+#         goods[n][1] = q
+#     else:
+#         break
+#
+# for i in goods:
+#     print(i, ') ', goods[i][0], ' - ', goods[i][1], ' шт. ', goods[i][2], 'руб', sep='')
+
+
+# d = {'A': 1, 'B': 2, 'C': 3}
+# x = iter(d)
+# print(x)
+# print(list(x)) # ['A', 'B', 'C']
+# d.clear() # удаляет все элементы из словаря, но не удаляет словарь
+# d2 = d.copy() # копирует словарь
+
+
+# d = {'A': 1, 'B': 2, 'C': 3}
+# value = d.get('B') # получить элемент по ключу
+# value2 = d.get('E', 'FF') # устанавливаем значение поумолчанию для элемента если его нет
+# print(value)
+# print(value2)
+# new = d.items() # dict_items([('A', 1), ('B', 2), ('C', 3)])
+# print(new)
+# a = d.keys() # dict_keys(['A', 'B', 'C']), список ключей
+# print(a)
+# item = d.pop('B', 5) # удаляет по ключу элемент и ключ и сохр его в переменной
+# item1 = d.pop('E', 10) # вернет не ошибку а значение указанное вторым
+# print(item)
+# print(d)
+# item = d.popitem() # удаляет из словаря и возвр. случайный элемент
+# print(item)
+# print(d)
+# item = d.setdefault('C') # Возвращает значение ключа
+# print(item)
+# print(d)
+# d.update([('R', 7), ('Q', 9)])  # добавляет новый ключ + значение, или обновляет значение если есть такой ключ
+# print(d)
+
+
+# складываем два словаря и обновляем элементы с уже имеющимся ключем
+# x = {'a': 1, 'b': 2}
+# y = {'b': 3, 'c': 4}
+# c = {'b': 5}
+# # z = x.copy()
+# # z.update(y)
+# z = x | y | c # объединяет словари
+# print(z)
+
+# d = {'A': 1, 'B': 2, 'C': 3}
+# v = d.values() # dict_values([1, 2, 3]) список значений
+# print(list(v)) # [1, 2, 3]
+
+# # 1
+# a = {'name': 'Kelly', 'age': 25, 'salary': 8000, 'city': 'New York'}
+# b = {'name': 'Kelly', 'salary': 8000}
+# for key in list(iter(a)):
+#     for keys in b.keys():
+#         if key == keys:
+#             del a[key]
+# print(a)
+# print(b)
+#
+# # 2
+# a['location'] = a.pop('city')
+# print()
+# print(a)
