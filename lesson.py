@@ -898,3 +898,222 @@
 # a['location'] = a.pop('city')
 # print()
 # print(a)
+
+
+# a = {'name': 'Kelly', 'age': 25, 'salary': 8000, 'city': 'New York'}
+# b = dict()
+# a['name'] = b.pop('name')
+# a['salary'] = b.pop('salary')
+# print(a)
+# print(b)
+
+
+# a = {
+#     'first': {
+#         1: 'one',
+#         2: 'two',
+#         3: 'three'
+#     },
+#     'second': {
+#         4: 'four',
+#         5: 'five'
+#     }
+# }
+# print(a)
+# for i in a:
+#     print(i)
+#     for j in a[i]:
+#         print('\t', j, ': ', a[i][j], sep="")
+#
+# a = {
+#     'John': {
+#         'N': '3056',
+#         'S': '8463',
+#         'E': '8441',
+#         'W': '2694'
+#     },
+#     'Tom': {
+#         'N': '4832',
+#         'S': '6786',
+#         'E': '4737',
+#         'W': '3612'
+#     },
+#     'Anne': {
+#         'N': '5239',
+#         'S': '4802',
+#         'E': '5820',
+#         'W': '1859'
+#     },
+#     'Fiona': {
+#         'N': '3904',
+#         'S': '3645',
+#         'E': '8821',
+#         'W': '2451'
+#     }
+# }
+# for i in a:
+#     print(i)
+#     for j in a[i]:
+#         print('\t', j, ': ', a[i][j], sep="")
+#
+# b = input("Имя: ")
+# d = input("Регион:")
+# print(a[b][d])
+# a[b][d] = input('Нужное значение: ')
+# print(a[b])
+
+
+# a = {'один': 1, 'два': 2, 'три': 3, 'четыре': 4}
+# b = {key: key for key in a} # {'один': 'один', 'два': 'два', 'три': 'три', 'четыре': 'четыре'}
+# b = {key: value for key, value in a.items()} # {'один': 1, 'два': 2, 'три': 3, 'четыре': 4}
+# b = {value: key for key, value in a.items() if value <= 2} # {1: 'один', 2: 'два'}
+# print(b)
+# s = [10, 20, 30, 40]
+# s = "hello"
+# a = {i: i * 5 for i in s} # {'h': 'hhhhh', 'e': 'eeeee', 'l': 'lllll', 'o': 'ooooo'}
+# print(a)
+
+# v = int(input('->'))
+# s = [10, 20, 30, 40]
+# a = {i: v for i in s} # {10: 1, 20: 1, 30: 1, 40: 1}
+# print(a)
+
+
+# s = [10, 20, 30, 40]
+# a = {i: int(input('->')) for i in s} # {10: 1, 20: 2, 30: 3, 40: 4}
+# print(a)
+
+# figure = {1: 'Rect', 2: 'Tria', 3: 'Circle'}
+# print((list(figure))) # [1, 2, 3]
+# print(list(figure.values())) # ['Rect', 'Tria', 'Circle']
+# print(list(figure.items())) # [(1, 'Rect'), (2, 'Tria'), (3, 'Circle')]
+
+# a = ['one', 1, 2, 3, 'two', 10, 20, 'three', 15, 36, 60, 'four', -20]
+# d = dict()
+# s = None
+# for i in a:
+#     if type(i) == str:
+#         d[i] = []
+#         s = i
+#     else:
+#         d[s].append(i)
+# print(d) # {'one': [1, 2, 3], 'two': [10, 20], 'three': [15, 36, 60], 'four': [-20]}
+
+
+# d = zip([1, 2, 3], ['one', 'two', 'three']) # первый список - ключи, второй - вэлью
+# print(dict(d)) # {1: 'one', 2: 'two', 3: 'three'}
+
+
+# a = ['Dec', 'Jan', 'Feb']
+# b = [12, 1, 2]
+# f = {k: v for k, v in zip(b, a)}
+# print(f) # {12: 'Dec', 1: 'Jan', 2: 'Feb'}
+# z = zip(a,b)
+# print(list(z)) # [('Dec', 12), ('Jan', 1), ('Feb', 2)]
+
+
+# print(list(zip(range(2, 5), range(100)))) # [(2, 0), (3, 1), (4, 2)]
+
+
+# a = {'a': 1, 'b': 2, 'c': 3}
+# b = {'a': 11, 'b': 22, 'c': 33}
+# for (k1, v1), (k2, v2) in zip(a.items(), b.items()):
+#     print(k1, '->', v1)
+#     print(k2, '->', v2)
+# ВЫВОД:
+# a -> 1
+# a -> 11
+# b -> 2
+# b -> 22
+# c -> 3
+# c -> 33
+
+
+# pairs = [(1, 'a'), (2, 'b'), (3, 'c'), (4, 'd')]
+# a, b = zip(*pairs) # * распаковка кортежа
+# print(a) # (1, 2, 3, 4)
+# print(b) # ('a', 'b', 'c', 'd')
+
+
+# a = [1, 2, 3, 4]
+# b = ['a', 'b', 'c', 'd']
+# data = list(zip(a,b))
+# print(data) # [(1, 'a'), (2, 'b'), (3, 'c'), (4, 'd')]
+# data.sort()
+# print(data)
+
+
+# month = ['January', 'February', 'March']
+# total_sales = [52000.00, 51000.00, 48000.00]
+# production_cost = [46800.00, 45900.00, 43200.00]
+# for sales, cost, m in zip(total_sales, production_cost, month):
+#     res = sales - cost
+#     print('Общая прибыль в', m, '=', res)
+# ВЫВОДИТ:
+# Общая прибыль в January = 5200.0
+# Общая прибыль в February = 5100.0
+# Общая прибыль в March = 4800.0
+
+
+# one = {'apple': 0.04, 'orange': 0.35}
+# two = {'pepper': 0.20, 'onion': 0.55}
+# print({**two, **one}) # {'pepper': 0.2, 'onion': 0.55, 'apple': 0.04, 'orange': 0.35}
+# for k, v in {**two, **one}.items():
+#     print(k, '->', v)
+# выводит:
+# pepper -> 0.2
+# onion -> 0.55
+# apple -> 0.04
+# orange -> 0.35
+
+
+# colors = ['red', 'green', 'blue']
+# ind = 1
+# for color in colors:
+#     print(str(ind) + ')', color)
+#     ind += 1
+#
+# print()
+# for i, color in enumerate(colors, 1):
+#     print(str(i) + ')', color)
+
+
+# d = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+#
+# for i, (j, q) in enumerate(d.items(), 1):
+#     print(i, ': ', j, q, sep='')
+# # ВЫВОДИТ
+# 1: a1
+# 2: b2
+# 3: c3
+# 4: d4
+
+
+# d = {
+#     1: {'a': 1, 'b': 2, 'c': 3, 'd': 4},
+#     2: {'a': 10, 'b': 20, 'c': 30, 'd': 40}
+# }
+#
+# for i, k in enumerate(d):
+#     print(i, ') key=', k, ', value=', d[k], sep='')
+# 0) key=1, value={'a': 1, 'b': 2, 'c': 3, 'd': 4}
+# 1) key=2, value={'a': 10, 'b': 20, 'c': 30, 'd': 40}
+
+
+# num = [1, 2, 3, 4, 5]
+# itr = iter(num)
+# print(itr)
+# print(next(itr)) # 1
+# print(next(itr)) # 2
+# print(next(itr)) # 3
+# print(next(itr)) # 4
+# print(next(itr)) # 5
+# print(next(itr, 'STOP')) # STOP
+
+
+# a = [6, 7, 3, 4, 1, 5]
+# b = enumerate(a)
+# c = next(b)
+# c1 = next(b)
+# print(c)
+# print(c1)
