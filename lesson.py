@@ -1117,3 +1117,351 @@
 # c1 = next(b)
 # print(c)
 # print(c1)
+
+
+# # 1
+# print()
+# color = ['red', 'green', 'blue']
+# color_num = ['#FF0000', '#008000', '#0000FF']
+# c = dict(zip(color, color_num))
+# print(c)  # {'red': '#FF0000', 'green': '#008000', 'blue': '#0000FF'}
+# print()
+#
+# # 2
+# a = {i: i * i * i for i in range(1, 11)}
+# print(a)  # {1: 1, 2: 8, 3: 27, 4: 64, 5: 125, 6: 216, 7: 343, 8: 512, 9: 729, 10: 1000}
+# print()
+#
+# # 3
+# d1 = ['color', 'fruit', 'pet']
+# d2 = ['blue', 'apple', 'dog']
+# d = {x: y for x, y in zip(d1, d2)}
+# print(d)  # {'color': 'blue', 'fruit': 'apple', 'pet': 'dog'}
+# print()
+#
+#
+# # 4
+#
+#
+# def mi_n(s):
+#     return min(s)
+#
+#
+# print(mi_n([10, 9]))  # 9
+# print(mi_n([2, 3, 4]))  # 2
+# print(mi_n([3, 5, 10, 6]))  # 3
+# print()
+#
+# # 5
+# a = [3, 5, 10, 6, 3]
+#
+#
+# def su_m(s):
+#     c = a[0]
+#     d = len(a) + 1
+#     for elem in range(d):
+#         print(c, end=' ')
+#         c += a[elem + 1]
+#
+#
+# print(su_m(a))
+
+# a = [1, 2, 3]
+# b = [*a, 4, 5, 6] # [1, 2, 3, 4, 5, 6]
+# print(b)
+
+
+# def func(*args):
+#     return args
+#
+#
+# print(func(1))  # (1,)
+# print(func(1, 3, 5, 'abc'))  # (1, 3, 5, 'abc')
+# print(func())  # ()
+
+
+# def summa(*params):
+#     res = 0
+#     for n in params:
+#         res += n
+#     return res
+#
+# a = summa(1,2,3,4,5,6,7)
+# b = summa(1,2,3)
+# print(a)
+# print(b)
+
+
+# def func(*a):
+#     return {i: i for i in a}
+#
+#
+# print(func(1, 2, 3, 4)) # {1: 1, 2: 2, 3: 3, 4: 4}
+
+
+# def funct(*a):
+#     r = (sum(a) / len(a))
+#     d = []
+#     for i in a:
+#         if i < r:
+#             d.append(i)
+#     print(d)
+#     print(r)
+#
+#
+# print(funct(1, 2, 3, 4, 5, 6, 7, 8, 9))
+
+
+# def func(a, *args):
+#     return a, args
+#
+#
+# print(func(1,2,3, 'abc')) # (1, (2, 3, 'abc'))
+
+
+# def func(student, *scores):
+#     a = 'Student name: ' + student
+#     s = []
+#     for score in scores:
+#         s.append(score)
+#     print(a, end=' ')
+#     print(*s, sep=', ')
+#
+#
+# func('Igor', 100, 95, 88, 92, 99)
+# func('Rick', 69, 96, 20, 33)
+# # Воводит
+# # Student name: Igor 100, 95, 88, 92, 99
+# # Student name: Rick 69, 96, 20, 33
+#
+# def func(student, *s):
+#     print('Student name: ' + student, end=' ')
+#     print(*s, sep=', ')
+#
+#
+# func('Igor', 100, 95, 88, 92, 99)
+# func('Rick', 69, 96, 20, 33)
+# # Воводит
+# # Student name: Igor 100, 95, 88, 92, 99
+# # Student name: Rick 69, 96, 20, 33
+
+# # перевернуть элемент
+# def reverse_num(n):
+#     s = str(n)
+#     return int(s[::-1])
+#
+#
+# def func(*args, only_odd=False):
+#     res = []
+#     for i in args:
+#         if not only_odd or (only_odd and i % 2 != 0):
+#             res.append(reverse_num(i))
+#     return res
+#
+#
+# print(func(12, 2345, 323, 4456, 5687, 62, 734, 81, 91))
+# print(func(12, 2345, 323, 4456, 5687, 62, 734, 81, 91, only_odd=True))
+
+
+# def func(**kwargs):
+#     return kwargs
+#
+#
+# print(func(a=1, b=2, c=3))  # {'a': 1, 'b': 2, 'c': 3}
+
+
+# def info(**data):
+#     for key, value in data.items():
+#         print(key, 'is', value)
+#     print()
+#
+#
+# info(firstname='Irina', lastname='Saunal', age=22, phone=2334212)
+# info(firstname='Irina', lastname='Wood', email='igor12@mail.ru', age=22, phone=2334212, country='Rus')
+# ВЫВОД:
+# firstname is Irina
+# lastname is Saunal
+# age is 22
+# phone is 2334212
+#
+# firstname is Irina
+# lastname is Wood
+# email is igor12@mail.ru
+# age is 22
+# phone is 2334212
+# country is Rus
+
+
+# функция добавляет в словарь любое количество элементов
+# def db(**kwargs):
+#     my_dict.update(**kwargs)
+#
+#
+# my_dict = {'one': 'first'}
+# db(k1=22, k2=31, k3=11, k4=91)
+# db(name='Bob', age=31, width=61, eyes_color='gray')
+# print('m = ', my_dict)
+
+
+# def func(a, *args, b=False, **kwargs):
+#     return a, args, b, kwargs
+#
+#
+# print(func(1,2,3,4, b=True, x=11, y=12, z=13))
+
+
+# def func1(*args):
+#     print(args[0])
+#
+#
+# def func2(**kwargs):
+#     print(kwargs['one'])
+#
+#
+# func1(1, 2, 3, 4, 5, 6)
+# func2(one=123, two=456)
+
+
+# x = {'a': 1, 'b': 2}
+# y = {'b': 3, 'c': 4}
+# z = {**x, 'one': 1, 'two': 2, **y}
+# print(z)
+
+
+# scope - область видимости функции
+
+# name = 'Tom' # ГЛОБАЛЬНАЯ ПЕРЕМЕННАЯ
+#
+#
+# def hi():
+#     global name # ДЕЛАЕТ ПЕРЕМЕННУЮ ГЛОБАЛЬНОЙ, ПИШЕТСЯ ВЫШЕ ПЕРЕМЕННОЙ
+#     name = 'Sam' # ЛОКАЛЬНАЯ ПЕРЕМЕННАЯ
+#     print('Hello', name)
+#
+#
+# def bye():
+#     print('Good bye', name)
+#
+#
+# hi()
+# bye()
+
+# i = 5
+#
+#
+# def func(arg=i):
+#     print(arg)
+#
+#
+# i = 6
+# func()
+
+
+# def add_two(a):
+#     x = 2
+#
+#     def add_some():
+#         print('x = ' + str(x))
+#         return a + x
+#
+#     return add_some()
+#
+#
+# print(add_two(3))
+
+# def outer_func(who):
+#     def inner_func():
+#         print('Hello,', who)
+#
+#     inner_func()
+#
+#
+# outer_func('World!')
+
+# def func1():
+#     a = 6
+#
+#     def func2(b):
+#         a = 4
+#         print('СУмма внутр функции:', a + b)
+#
+#     print('Значение внешней переменной а:', a)
+#
+#     func2(4)
+#
+# func1()
+
+# x = 25
+#
+#
+# def fn():
+#     global t
+#     a = 30
+#
+#     print('global:', x)
+#
+#     def inner():
+#         nonlocal a
+#         a = 35
+#         print(a)
+#
+#     inner()
+#     print(a)
+#     t = a
+#
+#
+# fn()
+# z = x + t
+# print(z)
+
+
+# def fn1():
+#     x1 = 25
+#
+#     def fn2():
+#         x1 = 33
+#
+#         def fn3():
+#             nonlocal x1
+#             x1 = 55
+#         fn3()
+#         print('fn2.x1 = ', x1)
+#     fn2()
+#     print('fn1.x1 = ', x1)
+#
+#
+# fn1()
+
+
+
+# def func(figure_type='figure', **data):
+#     res = 1
+#     if figure_type == 'rhombus':
+#         res = (data['d1'] * data['d2']) / 2
+#         return res
+#     elif figure_type == 'square':
+#         res = data['a'] * data['a']
+#         return res
+#     elif figure_type == 'trapezoid':
+#         res = 0.5 * ((data['a'] + data['b']) * data['h'])
+#         return res
+#     elif figure_type == 'circle':
+#         res = 3.14 * (data['r'] ** 2)
+#         return res
+#     else:
+#         a = 'invalid data'
+#         return a
+#
+#
+# print(func(figure_type='rhombus', d1=10, d2=8))
+# print(func(figure_type='square', a=5))
+# print(func(figure_type='trapezoid', a=12, b=3, h=6))
+# print(func(figure_type='circle', r=18))
+# print(func(figure_type='unknown', a=1, b=2, c=3))
+#
+# # выводит:
+# # 40.0
+# # 25
+# # 45.0
+# # 1017.36
+# # invalid data
