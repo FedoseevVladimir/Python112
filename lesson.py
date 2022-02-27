@@ -1465,3 +1465,209 @@
 # # 45.0
 # # 1017.36
 # # invalid data
+
+# def outer(a1, b1, a2, b2):
+#     a = 0
+#     b = 0
+#
+#     def inner():
+#         nonlocal a, b
+#         a = a1 + a2
+#         b = b1 + b2
+#
+#     inner()
+#     return [a, b]
+#
+#
+# print(outer(2, 3, -1, 4))
+
+
+# локальная переменная
+# def rect_paral_square(a, b, c):
+#     def rect_square(i, j):
+#         return i * j
+#
+#     s = 2 * (rect_square(a, b) + (rect_square(a, c) + (rect_square(c, b))))
+#     return s
+#
+#
+# print(rect_paral_square(2, 4, 6))
+# print(rect_paral_square(5, 8, 2))
+# print(rect_paral_square(1, 6, 8))
+
+# глобальная переменная
+# s = 0
+#
+#
+# def rect_paral_square(a, b, c):
+#     def rect_square(i, j):
+#         return i * j
+#     global s
+#     s = 2 * (rect_square(a, b) + (rect_square(a, c) + (rect_square(c, b))))
+#     return s
+#
+#
+# print(rect_paral_square(2, 4, 6))
+# print(s)
+# print(rect_paral_square(5, 8, 2))
+# print(s)
+# print(rect_paral_square(1, 6, 8))
+# print(s)
+
+# нелокальная переменная
+# def rect_paral_square(a, b, c):
+#     s = 0
+#
+#     def rect_square(i, j):
+#         nonlocal s
+#         s += i*j
+#
+#     rect_square(a, b)
+#     rect_square(a, c)
+#     rect_square(c, b)
+#     return 2 * s
+#
+#
+# print(rect_paral_square(2, 4, 6))
+# print(rect_paral_square(5, 8, 2))
+# print(rect_paral_square(1, 6, 8))
+
+# Замыкания
+# def outer(n):
+#     def inner(x):
+#         return n + x
+#
+#     return inner
+
+
+# add5 = outer(5)
+# print(add5(10)) # 15
+# add6 = outer(6)
+# print(add6(10)) # 16
+# print(outer(5)(10)) # 15 - обычно такой синтаксис не используют
+#
+#
+# def func1():
+#     a = 1
+#     b = 'line'
+#     c = [1, 2, 3]
+#
+#     def func2():
+#         nonlocal a
+#         c.append(4)
+#         a = a + 1
+#         return a, b, c
+#
+#     return func2
+#
+#
+# func = func1()
+# print(func())
+
+
+# def func(city):
+#     i = 0
+#
+#     def city_name():
+#         nonlocal i
+#         i += 1
+#         print(city, i)
+#
+#     return city_name
+#
+#
+# res = func("Москва")
+# res()
+# res()
+# res2 = func("Сочи")
+# res2()
+# res2()
+# res()
+
+
+# students = {
+#     'Alice': 98,
+#     'Bob': 67,
+#     'David': 85,
+#     'Chris': 75,
+#     'Ella': 54,
+#     'Fiona': 35,
+#     'Grace': 69
+# }
+#
+#
+# def outer(lower, upper):
+#     def inner(exam):
+#         return {k: v for (k, v) in exam.items() if lower <= v < upper}
+#
+#     return inner
+#
+#
+# a = outer(80, 100)
+# b = outer(70, 80)
+# c = outer(50, 70)
+# d = outer(0, 50)
+# print(a(students))
+# print(b(students))
+# print(c(students))
+# print(d(students))
+# ВЫВОДИТ
+# {'Alice': 98, 'David': 85}
+# {'Chris': 75}
+# {'Bob': 67, 'Ella': 54, 'Grace': 69}
+# {'Fiona': 35}
+
+
+# def func(x1, y1):
+#     return x1 + y1
+#
+#
+# print(func(1,2))
+# print()
+# print((lambda x, y: x + y)(1,2))
+#
+# func1 = lambda x, y: x + y
+# print(func1(1,2))
+# print(func1('a', 'b'))
+# print((lambda x, y: (x * x) + (y * y))(2, 5))
+# summ = lambda a=1, b=2, c=3: a + b + c
+#
+# print(summ())
+# print(summ(10))  # попадет в первое значение
+# print(summ(b=10))
+# print(summ(10, 20))
+
+
+# func = lambda *args: args
+#
+# print(func(1,2,3,4))
+
+
+# c = (lambda x: x * 2, lambda x: x * 3, lambda x: x * 4)
+#
+# for i in c:
+#     print(i('abc,'))
+# abc,abc,
+# abc,abc,abc,
+# abc,abc,abc,abc,
+
+# def inc1(n):
+#     return lambda x: x + n
+#
+#
+# f = inc1(42)
+# print(inc1(2))
+# print((lambda n: (lambda x:x+n))(42)(2))
+
+# print((lambda x: (lambda y: (lambda z: x + y + z)))(2)(4)(6)) # сумма чисел 12
+
+# d = {'r':10, 'b': 15, 'c': 4}
+# list_d = list(d.items())
+# print(list_d)
+# list_d.sort(key=lambda i: i[0]) # 0 сортировка по ключам, 1 - по значениям
+# print(list_d)
+
+# a = [(lambda x, y: x + y), (lambda x, y: x - y), (lambda x, y: x * y), (lambda x, y: x / y)]
+# b = a[1](12, 6)  # a[index элемента](значение x, y)
+# print(b)
+# print(type((lambda x, y: x + y)))

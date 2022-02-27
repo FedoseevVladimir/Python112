@@ -1,31 +1,34 @@
-def func(figure_type='figure', **data):
-    res = 1
-    if figure_type == 'rhombus':
-        res = (data['d1'] * data['d2']) / 2
-        return res
-    elif figure_type == 'square':
-        res = data['a'] * data['a']
-        return res
-    elif figure_type == 'trapezoid':
-        res = 0.5 * ((data['a'] + data['b']) * data['h'])
-        return res
-    elif figure_type == 'circle':
-        res = 3.14 * (data['r'] ** 2)
-        return res
-    else:
-        a = 'invalid data'
-        return a
+# # 1
+print('Функция принимает аргумент и умножает его на заданное число')
 
 
-print(func(figure_type='rhombus', d1=10, d2=8))
-print(func(figure_type='square', a=5))
-print(func(figure_type='trapezoid', a=12, b=3, h=6))
-print(func(figure_type='circle', r=18))
-print(func(figure_type='unknown', a=1, b=2, c=3))
+def func_compute(n):
+    def inner(x):
+        return n * x
 
-# выводит:
-# 40.0
-# 25
-# 45.0
-# 1017.36
-# invalid data
+    return inner
+
+
+res = func_compute(2)
+print(res(15))
+print(res(20))
+res = func_compute(3)
+print(res(15))
+print(res(20))
+print()
+# # 2
+print('Произведение трёх чисел через lambda')
+print((lambda x: (lambda y: (lambda z: x * y * z)))(2)(5)(5))
+print()
+# 3
+s = [
+    {'name': 'Jennifer', 'final': 95},
+    {'name': 'David', 'final': 92},
+    {'name': 'Nikolas', 'final': 98},
+]
+print('Сортировка по "name":')
+s1 = sorted(s, key=lambda d: d['name'])
+print(s1)
+print('Сортировка по "final":')
+s2 = sorted(s, key=lambda d: d['final'], reverse=True)
+print(s2)
