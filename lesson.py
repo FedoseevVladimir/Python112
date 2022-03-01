@@ -1671,3 +1671,265 @@
 # b = a[1](12, 6)  # a[index элемента](значение x, y)
 # print(b)
 # print(type((lambda x, y: x + y)))
+
+# # 1
+# print('Функция принимает аргумент и умножает его на заданное число')
+#
+#
+# def func_compute(n):
+#     def inner(x):
+#         return n * x
+#
+#     return inner
+#
+#
+# res = func_compute(2)
+# print(res(15))
+# print(res(20))
+# res = func_compute(3)
+# print(res(15))
+# print(res(20))
+# print()
+# # # 2
+# print('Произведение трёх чисел через lambda')
+# print((lambda x: (lambda y: (lambda z: x * y * z)))(2)(5)(5))
+# print()
+# # 3
+# s = [
+#     {'name': 'Jennifer', 'final': 95},
+#     {'name': 'David', 'final': 92},
+#     {'name': 'Nikolas', 'final': 98},
+# ]
+# print('Сортировка по "name":')
+# s1 = sorted(s, key=lambda d: d['name'])
+# print(s1)
+# print('Сортировка по "final":')
+# s2 = sorted(s, key=lambda d: d['final'], reverse=True)
+# print(s2)
+
+# players = [{'name': 'Антон', 'last name': 'Бирюков', 'rating': 9},
+#            {'name': 'Алексей', 'last name': 'Бодня', 'rating': 10},
+#            {'name': 'Федор', 'last name': 'Сидоров', 'rating': 4},
+#            {'name': 'Михаил', 'last name': 'Семенов', 'rating': 6}]
+#
+# s1 = sorted(players, key=lambda d: d['rating'], reverse=True)
+# print(s1)
+#
+# a = {'one': lambda x: x - 1, 'two': lambda x: abs(x) - 1, 'three': lambda x: x}
+# b = [-3, 10, 0, 1]
+# for i in b:
+#     if i < 0:
+#         print(a['two'](i))
+#     elif i > 0:
+#         print(a['one'](i))
+#     else:
+#         print(a['three'](i))
+
+# d = {'circle': lambda x: print(3.14 * x * x),
+#      'rectangle': lambda x, y: print(x * y),
+#      'trapezoid': lambda a, b, h: print((a + b) * h / 2)}
+# d['circle'](12)
+# d['rectangle'](2, 5)
+# d['trapezoid'](4, 7, 10)
+
+
+# находит максимальное значение
+# print((lambda a, b: a if a > b else b)(13, 12))
+# print((lambda a, b, c: a if (a <= b) and (b <= c) else (b if (b <= a) and (b <= c) else c))(100, 13, 17))
+
+
+# map(func, iterable)
+# def mul(t):
+#     return t * 2
+#
+#
+# s = [2, 8, 12, -5, -8]
+# s2 = 'hello'
+# ls = list(map(mul, s)) # [4, 16, 24, -10, -16]
+# ls2 = list(map(mul, s2))
+# print(ls)
+# print(ls2)
+
+# тоже самое только короче через мэп и лямбду
+# s = [2, 8, 12, -5, -8]
+# print(list(map(lambda t: t * 2, s)))  # [4, 16, 24, -10, -16]
+# print(list(map(lambda t: t * 2, [2, 8, 12, -5, -8])))  # [4, 16, 24, -10, -16]
+
+# s = ['1', '2', '3', '4', '5']
+# print(list(map(int, s)))
+
+# areas = [3.554747, 5.5734536, 4.004564, 56.243464, 9.01355, 32.000245]
+# res = list(map(round, areas, range(1, 7)))
+# print(res)  # [3.6, 5.57, 4.005, 56.2435, 9.01355, 32.000245]
+
+# l1 = [1, 2, 3]
+# l2 = [4, 5, 6]
+# print(list(map(lambda x, y: x + y, l1, l2))) #  [5, 7, 9]
+
+# filter(func, iterable)
+# t = ('abcd', 'abc', 'cdefg', 'def', 'ghi')
+# print(tuple(filter(lambda s: len(s) == 3, t)))  # ('abc', 'def', 'ghi')
+# print(tuple(map(lambda s: len(s) == 3, t))) # (False, True, False, True, True)
+
+
+# b = [66, 90, 68, 59, 76, 60, 88, 74, 81, 65]
+# res = list(filter(lambda s: s > 75, b))
+# print(res)
+
+# import random
+#
+# c = list(random.randint(1, 40) for i in range(10))
+# res = list(filter(lambda i: 10 <= i <= 20, c))
+# print(c)
+# print(res)
+
+# s = [45, 55, 60, 37, 100, 105, 220]
+# res = list(filter(lambda i: i % 15 == 0, s))
+# print(res)
+
+# s = [45, 55, 60, 37, 100, 105, 220]
+# res = list(filter(lambda i: not i % 15, s))
+# print(res)
+
+# квадраты нечетных чисел
+# print(list(map(lambda x:x**2, filter(lambda x:x %2 != 0, range(10))))) # [1, 9, 25, 49, 81]
+# print([x**2 for x in range(10) if x %2 !=0]) # [1, 9, 25, 49, 81]
+
+# s = ['madam', 'fire', 'tomato', 'book', 'kiosk', 'mom']
+# print(list(filter(lambda i: i == i[::-1], s)))
+
+# Декораторы
+
+# def hello():
+#     return 'Hello, I am func "hello"'
+#
+#
+# def super_func(func):
+#     print('Hello, I am func "super_func"')
+#     print(func())
+#
+#
+# super_func(hello)
+
+# def hello():
+#      return 'Hello, I am func "hello"'
+#
+# test = hello
+# print(test())
+
+# def my_decorator(func):
+#     def func_wrapper():
+#         print('Code before')
+#         func()
+#         print('Code after')
+#
+#     return func_wrapper
+#
+# def func_test():
+#     print('Hello i"m func')
+#
+# test = my_decorator(func_test)
+# test()
+
+# def my_decorator(func): # это декоратор, декорирующая функция
+#     def func_wrapper():
+#         print('Code before')
+#         func()
+#         print('Code after')
+#
+#     return func_wrapper
+#
+# @my_decorator
+# def func_test(): # декорируемая функция
+#     print('Hello i"m func')
+#
+# func_test()
+#
+# def bold(fn):
+#     def wrap():
+#         return '<b>' + fn() + '</b>'
+#
+#     return wrap
+#
+#
+# def italic(fn):
+#     def wrap():
+#         return '<i>' + fn() + '</i>'
+#
+#     return wrap
+#
+#
+# @bold
+# @italic
+# def hello():
+#     return 'text'
+#
+#
+# print(hello()) # <b><i>text</i></b>
+
+
+# def cnt(func):
+#     count = 0
+#
+#     def wrap():
+#         nonlocal count
+#         count = count + 1
+#         func()
+#         print('Вызов функции:', count)
+#
+#     return wrap
+#
+#
+# @cnt
+# def hello():
+#     print('Hello')
+#
+#
+# hello()
+# hello()
+# hello()
+# Hello
+# Вызов функции: 1
+# Hello
+# Вызов функции: 2
+# Hello
+# Вызов функции: 3
+
+# def args_decorator(fn):
+#     def wrap(arg1, arg2):
+#         print('Данные:', arg1, arg2)
+#         fn(arg1, arg2)
+#
+#     return wrap
+#
+# @args_decorator
+# def print_full_name(first, last):
+#     print('Меня зовут', first, last)
+#
+#
+# print_full_name('Ирина', 'Лаврова')
+
+
+# def args_decorator(fn):
+#     def wrap(*args, **kwargs):
+#         print('args:', args)
+#         print('kwargs:', kwargs)
+#         fn(*args, **kwargs)
+#
+#     return wrap
+#
+#
+# @args_decorator
+# def print_full_name(a, b, c, study='Python'):
+#     print(a, b, c, 'изучают', study, '\n')
+#
+#
+# print_full_name('БОрис', 'Елизавета', 'Светлана', study='JavaScript')
+# print_full_name('Владимир', 'Екатерина', 'Виктор')
+# # args: ('БОрис', 'Елизавета', 'Светлана')
+# # kwargs: {'study': 'JavaScript'}
+# # БОрис Елизавета Светлана изучают JavaScript
+# #
+# # args: ('Владимир', 'Екатерина', 'Виктор')
+# # kwargs: {}
+# # Владимир Екатерина Виктор изучают Python
