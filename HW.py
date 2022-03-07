@@ -1,32 +1,86 @@
 # 1
-a = [3, 6, 8, 9, 1, 2]
-print(list(map(lambda x: x * a.index(x) ** 3, a)))  # [0, 6, 64, 243, 64, 250]
+def decorator_sr(func):
+    def wrapper(*args):
+        val1 = func(*args)
+        val = val1 / len(args)
+        print('Cумма чисел ', *args, '=', val1)
+        print('Ср.арифм: ', *args, '=', val)
+
+    return wrapper
+
+
+@decorator_sr
+def summa(*args):
+    c = 0
+    for k in args:
+        c += k
+    return c
+
+
+summa(2, 3, 3, 4)
+# Cумма чисел  2 3 3 4 = 12
+# Ср.арифм:  2 3 3 4 = 3.0
 print()
+
+
 # 2
-b = [3, -4, -6, 7, -8, 3, -12, 4, 7]
-s = list(filter(lambda x: x < 0, b))
-print(s)
-print(abs(sum(s)))
+def change_char_to_str(w, old, new):
+    s2 = ''
+    g = 0
+    while g < len(w):
+        if w[g] == old and g % 2 == 0:
+            s2 = s2 + new
+        else:
+            s2 = s2 + w[g]
+        g += 1
+    return s2
+
+
+str1 = 'Я изучаю Nython. Мне нравится Nython. Nython очень интересный'
+str2 = change_char_to_str(str1, 'N', 'P')
+print('str1 = ', str1)
+print('str2 = ', str2)
+# str1 =  Я изучаю Nython. Мне нравится Nython. Nython очень интересный
+# str2 =  Я изучаю Nython. Мне нравится Python. Python очень интересный
 print()
+
+
 # 3
-nums = [3, 5, 7, 3, 9, 5, 7, 2]
-print(list(map(lambda x: x ** 2, nums)))
-print(list(map(lambda x: x ** 3, nums)))
+def del_letter(x, arr):
+    for j in arr:
+        if x == arr.index(j):
+            pass
+        else:
+            print(j, end='')
+
+
+s = '0123456789'
+print('s = ', end='')
+for i in s:
+    print(i, end='')
+print()
+print('s2 = ', end='')
+del_letter(5, s)
+# s = 0123456789
+# s2 = 012346789
+print()
 print()
 
 
 # 4
-def func_compute(n):
-    def inner(x):
-        return n * x
+def func1(x, arr):
+    x = str(x)
+    for j in arr:
+        if x != j:
+            print(j, end='')
 
-    return inner
 
-
-res = func_compute(2)
-print(res(15))
-print(res(20))
-res = func_compute(3)
-print(res(15))
-print(res(20))
+s = '132333435363738393'
+print('s = ', end='')
+for i in s:
+    print(i, end='')
 print()
+print('s2 = ', end='')
+func1(3, s)
+# s = 132333435363738393
+# s2 = 12456789

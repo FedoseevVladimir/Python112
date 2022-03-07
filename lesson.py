@@ -1433,7 +1433,6 @@
 # fn1()
 
 
-
 # def func(figure_type='figure', **data):
 #     res = 1
 #     if figure_type == 'rhombus':
@@ -1933,3 +1932,213 @@
 # # args: ('Владимир', 'Екатерина', 'Виктор')
 # # kwargs: {}
 # # Владимир Екатерина Виктор изучают Python
+
+# # 1
+# a = [3, 6, 8, 9, 1, 2]
+# print(list(map(lambda x: x * a.index(x) ** 3, a)))  # [0, 6, 64, 243, 64, 250]
+# print()
+# # 2
+# b = [3, -4, -6, 7, -8, 3, -12, 4, 7]
+# s = list(filter(lambda x: x < 0, b))
+# print(s)
+# print(abs(sum(s)))
+# print()
+# # 3
+# nums = [3, 5, 7, 3, 9, 5, 7, 2]
+# print(list(map(lambda x: x ** 2, nums)))
+# print(list(map(lambda x: x ** 3, nums)))
+# print()
+#
+#
+# # 4
+# def func_compute(n):
+#     def inner(x):
+#         return n * x
+#
+#     return inner
+#
+#
+# res = func_compute(2)
+# print(res(15))
+# print(res(20))
+# res = func_compute(3)
+# print(res(15))
+# print(res(20))
+# print()
+
+
+# def args_dec(arg1, arg2):
+#     print('Аргументы: ', arg1, arg2)
+#
+#     def wrapper(func1):
+#
+#         def wrap(func_arg1, func_arg2):
+#             print('Аргументы функции: ', func_arg1, func_arg2)
+#             func1(func_arg1, func_arg2)
+#             func1(arg1, arg2)
+#
+#         return wrap
+#
+#     return wrapper
+#
+#
+# @args_dec('Игорь', 'Нефедов') # Игорь Нефедов
+# def func(first, last):
+#     print('Меня зовут: ', first, last)
+#
+#
+# func('Ирина', 'Лаврова')
+# Аргументы:  Игорь Нефедов
+# Аргументы функции:  Ирина Лаврова
+# Меня зовут:  Ирина Лаврова
+# Меня зовут:  Ирина Лаврова
+
+# def args_dec(decorator_text):
+#     def wrapper(func):
+#         def wrap(*args):
+#             print(decorator_text, end='')
+#             func(*args)
+#
+#         return wrap
+#
+#     return wrapper
+#
+#
+# @args_dec(decorator_text='Hello, ')
+# def hello_world(text):
+#     print(text)
+#
+#
+# @args_dec(decorator_text='Hi, ')
+# def hello(text, t2):
+#     print(text, t2)
+#
+#
+# hello_world("world!")
+# hello('Igor!', 'Irina!')
+
+# def multiply(a):
+#     def wrapper(func):
+#         def wrap(b):
+#             return a * func(b)
+#
+#         return wrap
+#
+#     return wrapper
+#
+#
+# @multiply(3)
+# def return_num(num):
+#     return num
+#
+#
+# print(return_num(5))
+
+# def typed(*args, **kwargs):
+#     def wrapper(fn):
+#         def wrap(*f_args, **f_kwargs):
+#             for i in range(len(args)):
+#                 if type(f_args[i]) != args[i]:
+#                     raise TypeError('Некорректный тип данных')
+#             for k in kwargs:
+#                 if type(f_kwargs[k]) != kwargs[k]:
+#                     raise TypeError('Некорректный тип данных')
+#             return fn(*f_args, **f_kwargs)
+#
+#         return wrap
+#
+#     return wrapper
+#
+#
+# @typed(int, int, int)
+# def typed_fn(x, y, z):
+#     return x * y * z
+#
+#
+# @typed(str, str, str)
+# def typed_fn2(x, y, z):
+#     return x + y + z
+#
+#
+# @typed(str, str, z=int)
+# def typed_fn3(x, y, z='hello '):
+#     return (x + y) * z
+#
+#
+# print(typed_fn(3, 2, 5))
+# # print(typed_fn(3, 2, 'Hello '))
+# print(typed_fn2('Hello, ', 'world', '!'))
+# print(typed_fn3('Hello, ', 'world ', z=2))
+# # print(typed_fn3('Hello, ', 'world', z='2'))
+
+
+# def decor(tx=None, dec_text=''):
+#     def wrapper(func):
+#         def wrap(*args):
+#             print(dec_text, end='')
+#             func(*args)
+#         return wrap
+#
+#     if tx is None:
+#         return wrapper
+#     else:
+#         return wrapper(tx)
+#
+# @decor
+# def hello_world2(text):
+#     print(text)
+#
+# hello_world2('World!')
+#
+#
+# @decor(dec_text = 'hello, ')
+# def hello_world(text):
+#     print(text)
+#
+# hello_world('World!')
+#########################################################################
+# ПОСМОТРЕТЬ
+# https://www.youtube.com/playlist?list=PLKhF725nEal1za5jO8xSxbm9HyonmEGo-4
+# https://github.com/Helen-prog/Python112/blob/master/112.py
+#########################################################################
+
+# print(bin(18)) # 0b10010
+# print(oct(18)) # 0o22
+# print(hex(18)) # 0x12
+#
+# print(0b10010) # 18
+# print(0o22) # 18
+# print(0x12) # 18
+
+# q = 'Pyt'
+# w = 'hon'
+# print((q+w)*-3)
+# s = 'hello'
+# print(s[::-1])
+# print(s[slice(2)]) # he
+# print(s[slice(2, 5)]) # llo
+
+# s = 'python'
+# s = s[:3] + 't' + s[4:]
+# print(s)
+
+# def change_char_to_str(s, old, new):
+#     s2 = ''
+#     i= 0
+#     while i < len(s):
+#         if s[i] == old:
+#             s2 = s2 + new
+#         else:
+#             s2 = s2 + s[i]
+#         i += 1
+#     return s2
+#
+#
+# str1 = 'Я изучаю Nython. Мне нравится Nython. Nython очень интересный'
+# str2 = change_char_to_str(str1, 'N', 'P')
+# print('str1 = ', str1)
+# print('str2 = ', str2)
+# str1 =  Я изучаю Nython. Мне нравится Nython. Nython очень интересный
+# str2 =  Я изучаю Python. Мне нравится Python. Python очень интересный
+
+
