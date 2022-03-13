@@ -2395,4 +2395,157 @@
 #
 # s = 'Дана ст(рока символов, среди которых есть одна открыв)ающася'
 
+# # 1
+# s = 'Дана ст(рока символов, среди которых есть одна открыв)ающася'
+# a = s.find('(')
+# b = s.find(')')
+# # print(s[a+1:b]) # рока символов, среди которых есть одна открыв
+# print()
+# # 2 не работает, не понимаю как сделать по-другому..
+# # в интернете делают через replace(), мы такого не проходили
+# str1 = input('Строка: ')
+# str2 = []
+# z = input('ЕЕ заменяемая подстрока: ')
+# x = input('Новая подстрока: ')
+# for i in str1:
+#     if z.find(i) != -1:
+#         str2.append(i)
+#     else:
+#         str2.append(z)
+# print(str1)
+# # 3
+# # это задание исходя из моих знаний я не могу сделать:(
 
+# s = 'hello, WORLD! I am learning Python.'
+# print(s.rfind('l')) # индекс последнего вхождения 19
+# print(s.rfind('al')) # -1 if False
+# print(s.rfind('l', 0, 19)) # 3
+# print(s.rindex('l')) # 19
+
+# s = 'Send unlimeted free texts and make WiFi calls from a free phone number. Download the free app or sign up online to pick your free phone number'
+# if s.count('f') >= 2:
+#     print(s.find('f'), s.rfind('f'))
+# elif s.count('f') < 2:
+#     print(s.find('f'))
+
+# c = 'I am learning Python. hello, World!'
+# c = c[:c.find('h')] + c[c.rfind('h') + 1:]
+# print(c)
+
+# s = 'I am learning Python. hello, World!'
+# print(s.endswith('d!'))
+# print(s.startswith('I am'))
+
+# print('abc123'.isalnum()) # строка состоит из букв и цифр True
+# print('abc#123'.isalnum()) # False
+# print('ABCabc'.isalpha()) # True только из букв
+# print('123'.isdigit()) # True только цифры
+# print('abc'.isidentifier()) # True валидный идентификатор
+# print('1afdf'.isidentifier()) # False, такие переменные нельзя называть
+# print('abc'.islower()) # True если всё в нижнем регистре + любые символы
+# print(' \t \n'.isspace()) #
+# print('The Apple'.istitle()) # True если каждое слово в верхнем регистре
+# print('ABC'.isupper()) # TRUE если все в верхнем регистре + любые символы
+
+# print('py'.center(10, '-'))
+# print('py'.center(9, '-'))
+
+# print('       py             '.lstrip()) # удаляет пробелы именно с ЛЕВОЙ стороны
+# print('       py             '.rstrip()) # удаляет пробелы именно с ПРАВОЙ стороны
+# print('https://www.python.org'.lstrip('/:phts'))
+# print('https://www.python.org'.lstrip('/:phts').rstrip('.org')) # www.python
+# print('        py       '.strip()) # удаляет заданные элементы со всех сторон
+# ================================================================================================
+# s = 'Я изучаю Nython. Мне нравится Nython. Nython очень интересный'
+# print(s.replace('Nython', 'Python')) # заменяет подстроку на значение
+# =====================================================================
+# s = '-'
+# seq = ('a', 'b', 'c')
+# print(s.join(seq)) # a-b-c
+# print('..'.join(['1', '2'])) # 1..2
+# print(':'.join('Hello')) # H:e:l:l:o
+# ==========================================================================
+# print('Строка разделенная пробелами'.split()) # ['Строка', 'разделенная', 'пробелами']
+# print('www.python.org'.split('.')) # ['www', 'python', 'org']
+# print('www.python.org'.split('.', 1)) # ['www', 'python.org']
+
+# a = input('-> ').split()
+# print(a[0], a[1][:1]+'.', a[2][:1]+'.')
+
+# s = '*'.join((input('Введите строку: ').split()))
+# print(s)
+
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# РЕГУЛЯРНЫЕ ВЫРАЖЕНИЯ
+# import re
+
+
+# s = 'Я ищу совпадения в 2021 году. И я их обязательно найду. 4546'
+# reg = 'я'
+# print(re.findall(reg, s)) # ['я', 'я', 'я']
+# print(re.search(reg, s)) # возвращает первое найденое совпадение и останавливает поиск
+# print(re.search(reg, s).span()) # (15, 16)
+# print(re.search(reg, s).start()) # 15
+# print(re.search(reg, s).end()) # 16
+# print(re.search(reg, s).group()) # я
+#
+# print(re.match(reg, s)) # None
+# rec = r'\.'
+# print(re.split(reg, s)) # ['Я ищу совпадени', ' в 2021 году. И ', ' их об', 'зательно найду. 4546']
+# print(re.split(rec, s)) # ['Я ищу совпадения в 2021 году', ' И я их обязательно найду', ' 4546']
+# print(re.sub(rec, '!', s)) # Я ищу совпадения в 2021 году! И я их обязательно найду! 4546
+# import re
+#
+# s = 'Я ищу совпадения в 2021 году. 1987 И я их обязательно найду. 4546. Найду в два счёта'
+# reg = '2021'
+# rec = '[2021]'
+# rew = '[0-9]'
+# rey = '[12][0-9][0-9][0-9]'
+# rez = '[А-Яа-яё]'
+# print(re.findall(reg, s)) # ['2021']
+# print(re.findall(rec, s)) # ['2', '0', '2', '1']
+# print(re.findall(rew, s)) # ['2', '0', '2', '1', '4', '5', '4', '6']
+# print(re.findall(rey, s)) # ['2021', '1987']
+# print(re.findall(rez, s))
+
+# import re
+
+# s = 'Я ищу совпадения в 2021 году. 1987 И я их обязательно найду. 4546. Найду в два счёта'
+# reg = r'[А-Яа-яё.]'
+# print(re.findall(reg, s))
+
+# s = 'Еда, беду, победа'
+# reg = '[Ее]д[ау]'
+# print(re.findall(reg, s)) # ['Еда', 'еду', 'еда']
+
+# s = 'Ели[-ели].'
+# reg = r'[А-Яа-яё.\[\]-]'
+# print(re.findall(reg, s)) # ['Еда', 'еду', 'еда']
+# s = 'Я ищу совпадения в 2021 году. 1987 И я их обязательно найду. 4546.'
+# reg = r'[^0-9]'
+# print(re.findall(reg, s)) # все что угодно кроме 0-9
+
+# s = 'Час в 24-часовом формате от 00 до 23. 2021-06-15Т21:45. Минуты, в диапазоне от 00 до 59. 2021-06-15Т01:09'
+# reg = r'[0-2][0-9]:[0-5][0-9]'
+# print(re.findall(reg, s))
+
+# ==================================================================
+# \d - любая цифра
+# \w - любая цифра, буква, символ _
+# \s - символ пробела
+# s = 'Я ищу совпадения в 2021 году. 1987 И я их обязательно найду. 4546.'
+# reg = r'[\d]'
+# print(re.findall(reg, s))
+# ================================================================================
+# ================================================================================
+# 1 перевернуть подстроку между первым и последним вхождением 'h'
+# s = 'I am learning Python. hello, WORLD!'
+# print(s)
+# print(s[0:s.find('h') + 1] + s[s.rfind('h') - 1:s.find('h'): -1] + s[s.rfind('h'):])
+# I am learning Pyth .nohello, WORLD!
+# print()
+# 2 заменить 'о' на 'О', кроме первого вхождения и последнего
+# a = 'Замените в этой строке все появления буквы "о" на букву "О", кроме первого и последнего вхождения.'
+# print(a)
+# print(a.replace('о', 'О', a.count('о') - 1).replace('О', 'о', 1))
+# Замените в этой стрОке все пОявления буквы "О" на букву "О", крОме первОгО и пОследнегО вхождения.
