@@ -2549,3 +2549,122 @@
 # print(a)
 # print(a.replace('о', 'О', a.count('о') - 1).replace('О', 'о', 1))
 # Замените в этой стрОке все пОявления буквы "О" на букву "О", крОме первОгО и пОследнегО вхождения.
+#
+# import re
+
+#
+# s = 'Я ищу совпадения в 2021 году. 1987 И я их обязательно найду. 4546.'
+# # повторения
+# # + - от 1 до бесконечности
+# # * - от 0 до бесконечностиэ
+# # ? - от 0 до 1
+# reg = r'20*'
+# print(s)
+# print(re.findall(reg, s))
+#
+# d = 'Цифры: 7, +17, -42, 0013, 0.3'
+# print(re.findall(r'[+-]?[\d.]+', d)) # ['7', '+17', '-42', '0013', '0.3']
+#
+# s = '05-03-1987 # Дата рождения'
+#
+# print('Дата рождения: ', re.sub(r'#.*', '', s))
+# print('Дата рождения:', re.sub(r'-', '.', re.sub(r'#.*', '', s)))
+
+# s = 'author=Пушкин А.С.; title = Евгений Онегин; price =200; year= 1831'
+# reg = r'\w+\s*=[^;]+'
+# print(re.findall(reg, s))
+
+# s1 = 'МИ Д - Министерство иностранных дел, ГЭС - гидроэлектро станция, ФСБ - Федеральная служба безопасности'
+# reg1 = r'[А-ЯЁ]{2,}\s*[А-ЯЁ]*'
+# print(re.findall(reg1, s1))
+
+# s = '+7 499 456-45-78, +74994564578, 7 (499) 456 45 78, 74994564578'
+# reg = '\+?7[0-9]{10}'
+# print(re.findall(reg, s))
+
+# s = 'Я ищу совпадения в 2021 году. 1987 И я их обязательно найду.'
+# # reg = r'^\w+\s\w+'
+# reg = r'\w+\.$'
+# print(s)
+# print(re.findall(reg, s))
+
+# print(re.findall(r'\w+', '12 + й')) # ['12', 'й']
+# print(re.findall(r'\w+', '12 + й', flags=re.A)) # ['12'] только символы АСКИИ цифры и англ буквы
+
+# s = 'hello world'
+# print(re.findall(r'\w+', s, flags=re.DEBUG))
+
+# s = 'Я ищу совпадения в 2021 году. 1987 И я их обязательно найду.'
+# reg = r'я'
+# print(s)
+# print(re.findall(reg, s, re.I)) # IGNORECASE
+
+# text = '''
+# one
+# two
+# '''
+# print(re.findall(r'one.\w+', text)) # []
+# print(re.findall(r'one.\w+', text, re.DOTALL)) # ['one\ntwo']
+# print(re.findall(r'one$', text)) # []
+# print(re.findall(r'one$', text, re.MULTILINE)) # ['one']
+
+# text = '''
+# {
+# "one": 1,
+# "two": 2,
+# "three": 3
+# }
+# '''
+# print(re.findall(r'^["\w]+', text)) # []
+# print(re.findall(r'^["\w]+', text, re.MULTILINE)) # ['"one"', '"two"', '"three"']
+
+# print(re.findall('''
+# [a-z.-]+ # part 1
+# @
+# [a-z.-]+ # part 2
+# ''', 'test@mail.ru', re.VERBOSE))
+
+# text = '''Python,
+# python
+# PYTHON'''
+# reg = '(?mi)^python'
+# print(re.findall(reg, text))
+
+# def validate_name(name):
+#     return re.findall(r'^[a-z0-9_-]{3,16}$', name, re.I)
+#
+#
+# print(validate_name('Python_master'))
+# print(validate_name('Py'))
+# print(validate_name('@Python_master#@#%@^%'))
+
+# s = '13425@i, 1224@i.ru, 123_2342@ru.name.ru, login@i.ru, логин-1@i.ru, login.3@i.ru, login.3-67@i.ru, 1login@ru.name.ru'
+# reg = r'[\w.-]+@[\w.-]+[\w]{2,3}'
+# print(re.findall(reg, s)) # ['1224@i.ru', '123_2342@ru.name.ru', 'login@i.ru', 'логин-1@i.ru', 'login.3@i.ru', 'login.3-67@i.ru', '1login@ru.name.ru']
+# text = '<body>Пример жадного соответствия регулярного выражения</body>'
+# print(re.findall('<.*?>', text))
+# # *?, +?, ??
+# # {m,n}?, {,n}?, {m,}?
+# text = '<body>Пример жадного соответствия регулярного выражения</body>'
+# print(re.search('<.*?>', text).group())
+
+# s = '<p>Изображение <img src = "bg.jpg> - фон страницы</p>"'
+# reg = r'<img\s+[^>]*?src\s*=\s[^>]+>'
+# print(re.findall(reg, s))
+
+# text = 'высокоуровневый язык программирования общего назначения с динамической строгой типизацией и автоматическим управлением памятью[25][26], ориентированный на повышение производительности разработчика, читаемости кода и его качества, а также на обеспечение переносимости написанных на нём программ[27]. Язык является полностью объектно-ориентированным в том плане, что всё является объектами[25]. Необычной особенностью языка является выделение блоков кода пробельными отступами[28].'
+# print(re.findall(r'\[.*?]', text)) ########### если нужно найти чтото в []
+
+# s = 'Петр, Ольга и Виталий отлично учатся!'
+# reg = r'Петр|Ольга|Виталий'
+# print(re.findall(reg, s))
+
+# s = 'int = 4, float = 4.0, double = 8.0f'
+# # reg = r'int\s*=\s*\d[.\w+]*|float\s*=\s*\d[.\w+]*'
+# reg = r'(?:int|float)\s*=\s*\d[.\w+]*'
+# print(re.findall(reg, s))
+# (?:) - группирующая скобка является не сохраняющей
+
+
+
+
