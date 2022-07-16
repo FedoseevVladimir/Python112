@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+{% load static %}
+<h1>Портфолио по созданию сайтов</h1>
+
+<div class="img">
+    <img src="{% static 'blog/1.jpg' %}" width="1200" height="600">
+</div>
+
+<div class="block">
+    {% for project in projects %}
+    <div class="elem">
+        <div class="text">
+            <h2>{{ project.title }}</h2>
+            <p>{{ project.description }}</p>
+            <div><img src="{{ project.image.url }}" width="1200" height="600"></div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<h2>Статическое изображение</h2>
+<div class="img">
+    <img src="{% static 'blog/staticimg.jpg' %}" width="1200" height="600">
+</div>
+{% endblock %}
