@@ -14,6 +14,74 @@ body {
     padding: 20px;
     box-sizing: border-box;
 }
+.menu {
+    background: yellow;
+    box-shadow: 0 4px 12px 4px yellow;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li {
+    font-size: 25px;
+}
+.menu a{
+    color: black
+}
+a {
+    text-decoration: none;
+}
 h1, h2 {
     text-align: center;
+}
+input{
+    width: 100%;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    font-size: 30px;
+}
+.btn {
+    background: black;
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+#btn {
+    border-radius: 25%;
+}
+.register ul {
+    margin-bottom: 0;
+    list-style-type: none;
+}
+.option{
+    display: flex;
+    justify-content: space-between;
+}
+.option li {
+    min-width: 300px;
+    padding: 20px;
+    border: 4px solid #F3F85B;
+    border-radius: 15%;
+    text-align: center;
+    font-size: large;
+    background: #F3F85B;
+    box-shadow: 0 4px 12px 4px #F3F85B;
+}
+.option h2 {
+    font-size: 30px;
+}
+.option p {
+    font-size: 15px;
+}
+#userForm {
+    height: 400px;
 }

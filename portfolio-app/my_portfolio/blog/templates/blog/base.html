@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
+{% if user.is_authenticated %}
+    <div class="menu">
+        <div class="wrap">
+            <ul>
+                <li class="users">Пользователь: {{ user.username }}</li>
+                <li><a href="{% url 'price' %}">Цены на проекты</a></li>
+                <li><a href="{% url 'feedback' %}">Написать отзыв</a></li>
+                <li><a href="{% url 'index' %}">Примеры работ</a></li>
+                <li>
+                    <form action="{% url 'logoutuser' %}" method="post">
+                        {% csrf_token %}
+                        <button class="btn" id="btn">Выйти</button>
+                    </form>
+            </ul>
+        </div>
+    </div>
+{% else %}
+    <div class="menu">
+        <div class="wrap">
+            <ul>
+                <li><a href="{% url 'signupuser' %}">Зарегистрироваться</a></li>
+                <li><a href="{% url 'loginuser' %}">Войти</a></li>
+            </ul>
+        </div>
+    </div>
+{% endif %}
+
     <div class="content">
         <div class="wrap">
             {% block content %}

@@ -22,7 +22,14 @@ from blog import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index')
+    path('index/', views.index, name='index'),
+    path('price/', views.price, name='price'),
+    path('feedback/', views.feedback, name='feedback'),
+
+    path('login/', views.loginuser, name='loginuser'),
+    path('signupuser/', views.signupuser, name='signupuser'),
+    path('logout/', views.logoutuser, name='logoutuser'),
+    path('', views.home, name='home'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

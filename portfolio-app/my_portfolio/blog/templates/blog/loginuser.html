@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<h1>Авторизация</h1>
+<h2>{{ error }}</h2>
+
+<form method="post" class="bg">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="center">
+        <button class="btn">Авторизация</button>
+    </div>
+</form>
+
+<div class="img">
+    <img src="{% static 'blog/staticimg.jpg' %}" width="1200" height="600">
+</div>
+
+{% endblock %}
