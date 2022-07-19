@@ -1,9 +1,10 @@
 from django.shortcuts import render, redirect
-from .models import Blog
+from .models import *
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 from django.db import IntegrityError
 from django.contrib.auth import login, logout, authenticate
+from django.views.generic import ListView
 
 
 def home(request):
@@ -57,3 +58,15 @@ def loginuser(request):
         else:
             login(request, user)
             return redirect('index')
+
+
+menu = [
+    {'title': 'Добавить статью', 'url_name': 'blog'},
+    {'title': 'Войти', 'url_name': 'blog'}
+]
+
+
+class BlogHome(ListView):
+    model = Myblog
+    template_name = 'blog/myblog.html'
+    context_object_name = 'blogs'
