@@ -1,0 +1,9 @@
+#header{
+    background: #446600;
+}
+.breadcrumbs {
+    background: red !important;
+}
+a:link, a:visited{
+    color: #00FF2F
+}
