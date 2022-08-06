@@ -30,7 +30,8 @@ urlpatterns = [
     path('signupuser/', views.signupuser, name='signupuser'),
     path('logout/', views.logoutuser, name='logoutuser'),
     path('', views.home, name='home'),
-    path('', include('blog.urls'))
+    path('', include('blog.urls')),
+    path(r'ckeditor/', include('ckeditor_uploader.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

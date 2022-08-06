@@ -1,0 +1,26 @@
+#header {
+    background: #439400;
+    box-shadow: 0 4px 12px 4px #439400;
+}
+
+body {
+    background: #8ffa98;
+}
+.app-blog caption, .app-auth caption {
+    background-color: #439400;
+}
+.app-blog tr a, .app-auth tr a {
+    color: black !important;
+}
+.addlink a {
+    color: black !important;
+}
+.breadcrumbs {
+    background: #439400 !important;
+}
+#myblog_form div, #nav-sidebar{
+    background: #55f562f8;
+}
+.submit-row input {
+    background-color: black !important;
+}
