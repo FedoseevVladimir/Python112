@@ -2,6 +2,15 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/di-app/online_school" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/di-app/school_page" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fifth-app/landing_page" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sixth-app/app" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/seventh-app/shop" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/eighth-app/service_vacancies" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ninth-app/drfsite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/third-app/todos" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/di-app" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="inheritedJdk" />

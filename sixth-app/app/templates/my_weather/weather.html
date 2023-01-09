@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="wrap">
+    <div class="block">
+        <div class="elem">
+            <h2>Погода в моем городе</h2>
+            <div class="info">
+                <p class="data">
+
+                    <b>Город: {{ city }}</b> <br><br>
+                    <b>Температура: {{ c_weather }}</b> <br><br>
+                    <b>Изображение: <img src="{{ img1 }}" alt="" width="40px" height="40px"></b>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

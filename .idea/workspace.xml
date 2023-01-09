@@ -2,9 +2,567 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb4e9a92-205b-43c8-93b7-3d53371dff1a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/HW.py" beforeDir="false" afterPath="$PROJECT_DIR$/Work/HW.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clients.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWork/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWork/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWork/head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWork/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/F1/f11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/F1/f12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/F1/f13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/F21/f211.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/F21/f212.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/HW.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/Qt5Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/Qt5Gui.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/Qt5Network.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/Qt5PrintSupport.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/Qt5Script.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/Qt5Svg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/Qt5Widgets.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/Qt5Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/SQLiteStudio.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/coreSQLiteStudio.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/guiSQLiteStudio.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/iconengines/qsvgicon.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/imageformats/qgif.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/imageformats/qicns.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/imageformats/qico.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/imageformats/qjpeg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/imageformats/qsvg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/imageformats/qtga.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/imageformats/qtiff.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/imageformats/qwbmp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/libcrypto-1_1-x64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/libeay32.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/libgcc_s_seh-1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/libssl-1_1-x64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/libstdc++-6.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/libwinpthread-1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/platforms/qwindows.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/plugins/ConfigMigration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/plugins/CsvExport.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/plugins/CsvImport.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/plugins/DbAndroid.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/plugins/DbSqliteCipher.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/plugins/DbSqliteWx.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/plugins/HtmlExport.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/plugins/JsonExport.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/plugins/MultiEditorImage.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/plugins/PdfExport.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/plugins/Printing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/plugins/RegExpImport.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/plugins/ScriptingTcl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/plugins/SqlEnterpriseFormatter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/plugins/SqlExport.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/plugins/SqlFormatterSimple.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/plugins/XmlExport.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/printsupport/windowsprintersupport.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/qt.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/sqlitestudiocli.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/styles/FusionDarkStyle.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/styles/qwindowsvistastyle.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/tcl86.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/SQLiteStudio/zlib1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/articles/controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/articles/model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/articles/project_articles.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/articles/view.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/templates/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/w.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Escape-последовательности_(экранирование).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/InstallPython.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/pycharm.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/python.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Арифметические_операторы.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Ввод_данных.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Зарезервированные_слова.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Именование_переменных.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Комментарии.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Литералы.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Множественное_присваивание.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Оператор_операнды.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Операторы присваивания.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Основные типы данных.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Переменные.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Переменные_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Практика/4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Практика/5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Преобразование_строк.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Преобразование_типов.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Приоритет_операторов.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Приоритет_операторов_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Приоритет_операторов_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Термины.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Тип_данных.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Типизация данных.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Функции_преобразования_чисел.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Целочисленное_деление.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Числовой_тип_данных.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Числовые_выражения.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/1/Числовые_выражения_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/10/Операции с множествами.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/10/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/10/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/10/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/10/Практика/4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/10/Практика/5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/10/Практика/6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/10/Практика/7.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/11/zip.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/11/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/11/Практика/10.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/11/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/11/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/11/Практика/4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/11/Практика/5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/11/Практика/6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/11/Практика/7.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/11/Практика/8.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/11/Практика/9.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/11/Разряженная-матрица.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/12/LEGB rule.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/12/LEGB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/12/Scope.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/12/Области видимости.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/12/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/12/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/12/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/12/Практика/4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/12/Практика/5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/13/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/13/Практика/10.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/13/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/13/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/13/Практика/4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/13/Практика/5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/13/Практика/6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/13/Практика/7.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/13/Практика/8.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/13/Практика/9.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/14/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/14/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/15/ASCII.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/15/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/15/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/15/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/15/Префиксы_строк.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/15/Системы счисления.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/15/Таблица символов Юникода.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/15/Таблица соответствия.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/17/Capture.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/17/Regular expression operations.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/17/regexp.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/17/regexp_look_ahead.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/17/Как формируются римские числа.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/17/Квантификаторы.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/17/Комбинации.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/17/Метасимволы.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/17/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/17/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/17/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/17/Практика/4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/17/Практика/5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/17/Практика/6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/17/Практика/7.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/17/Специальные_пары_символов.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Поиск/Бинарный поиск в упорядоченном списке целых чисел.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Поиск/Последовательный поиск в списке целых чисел.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Практика/D_Z_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Практика/D_Z_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Рекурсия/Последовательность рекурсивных возвратов для сложения списка чисел.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Рекурсия/Последовательность рекурсивных вызовов для сложения списка чисел.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Рекурсия/Преобразование_целого_числа_в_строку_по_основанию_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Рекурсия/Рекурсивный обход вложенного списка.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Сортировка/1_Пузырьковая сортировка.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Сортировка/2_merge-sort.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Сортировка/2_Разбиение списка в сортировке слиянием.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Сортировка/2_Списки, которые соединяются вместе_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Сортировка/3_1_Сортировка Шелла.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Сортировка/3_2_Сортировка Шелла.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Сортировка/3_3_Сортировка Шелла.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Сортировка/4_1_Быстрая сортировка Хоара.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Сортировка/4_2_Быстрая сортировка Хоара 2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Сортировка/4_3_Быстрая сортировка.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Сортировка/Последовательный поиск в упорядоченном списке целых чисел.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/18/Сортировка/Сортировка Шелла.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/19/open.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/19/Атрибуты файлового объекта.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/19/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/19/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/19/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/19/Практика/4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/19/Практика/5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/19/Режимы открытия файлов 1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/19/Режимы открытия файлов 2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/19/Режимы открытия файлов.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/2/PEP8.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/2/Zen_of_Python_(PEP20).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/2/python_code_styleguide.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/2/Логические_операторы.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/2/Операторы_сравнения.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/2/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/2/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/2/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/2/Практика/4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/2/Практика/5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/2/Таблицы истинности/Оператор_and.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/2/Таблицы истинности/Оператор_not.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/2/Таблицы истинности/Оператор_or.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/2/Тернарное_выражение.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/2/Тернарное_выражение_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/2/Читабельность_кода.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/20/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/20/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/20/Практика/2_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/20/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/20/Практика/4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/21/Виды современной системы контроля версий/1_Централизованная.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/21/Виды современной системы контроля версий/2_Распределенная.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/3/Еxceptions.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/3/Основные_исключения.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/3/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/3/Практика/10.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/3/Практика/11.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/3/Практика/12.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/3/Практика/13.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/3/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/3/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/3/Практика/4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/3/Практика/5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/3/Практика/6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/3/Практика/7.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/3/Практика/8.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/3/Практика/9.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/4/list.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/4/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/4/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/4/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/5/Генераторное_выражение.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/5/Методы_списков.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/5/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/5/Практика/10.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/5/Практика/11.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/5/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/5/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/5/Практика/4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/5/Практика/5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/5/Практика/6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/5/Практика/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/5/Практика/8.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/5/Практика/9.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/6/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/6/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/6/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/6/Практика/4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/7/Category.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/7/Standard_Library.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/7/locale.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/7/math.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/7/time.struct_time.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/7/Методы_time.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/7/Модуль_math.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/7/Модуль_time.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/7/Практика/0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/7/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/7/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/7/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/7/Практика/4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/7/Практика/5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/7/Практика/6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/7/Практика/7.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/8/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/8/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/8/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/8/Практика/4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/8/Практика/5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/8/Практика/6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/8/Ряд_Фибоначчи.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/9/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/9/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/9/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/9/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/9/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/Base/9/Практика/4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/SQLiteStudio.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/db1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/db2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/db2_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/db_1.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/db_2.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/Модели_БД/Иерархическая_модель.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/Модели_БД/Иерархическая_модель_2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/Модели_БД/Модели_БД.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/Модели_БД/Объектно-ориентированная модель.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/Модели_БД/Объектно-ориентированная_модель.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/Модели_БД/Реляционная_модель.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/Модели_БД/Реляционная_модель_2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/Модели_БД/Сетевая модель.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/Модели_БД/Сетевая_модель.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/Модели_БД/Сетевая_модель_2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/Модели_БД/иерархическая модель.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/Операторы сравнения.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/Простейшая-схема-работы-с-БД.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_1/Типы_данных.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_2/db3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_2/db4.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_2/db_3.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_2/db_4.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_3/1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_3/1-N.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_3/ForeingKey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_3/M-N.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_3/PrimaryKey.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_3/db5.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_3/db6.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_3/db_5.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_3/Виды_связей.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_3/Внешние_ключи.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_3/Двенадцать правил Кодда.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_3/Практика.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_3/один к одному.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_4/db_7.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_4/db_7.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_4/db_8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_4/Практика_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_5/avatars/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_5/db_10.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_5/db_11.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_5/db_11.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_5/db_9.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_5/db_9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_5/Внутреннее объединение/img_fulljoin.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_5/Внутреннее объединение/img_innerjoin.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_5/Внутреннее объединение/img_leftjoin.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_5/Внутреннее объединение/img_rightjoin.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_5/Практика_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_5/Практика_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/DB/DB_5/Практика_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_1/Jinja.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_1/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_1/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_1/Фильтры_jinja.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_2/Blueprint.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_2/Validators.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_2/WTForms.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_2/flask-login.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_2/flask.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_2/images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_2/images/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_2/images/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_2/images/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_2/images/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_2/images/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_2/images/default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_2/Статьи.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_3/MTV.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_3/MVC_MTV.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_3/URL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_3/blog/blog_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_3/blog/blog_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_3/blog/blog_3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_3/blog/blog_4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_3/blog/blog_5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_3/djangoproject.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_3/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_3/images/html_css.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_3/images/js.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_3/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_3/images/python.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_3/images/wc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_3/resume.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_3/skills.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_3/Практика/D_Z_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_4/Django 4.0 на русском.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_4/Содержимое по категориям/1_Веб-программирование/1_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_4/Содержимое по категориям/1_Веб-программирование/1_1_Зачем требуется сайт для компании.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_4/Содержимое по категориям/1_Веб-программирование/1_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_4/Содержимое по категориям/1_Веб-программирование/1_2_Пошаговая инструкция как самому создать сайт.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_4/Содержимое по категориям/1_Веб-программирование/1_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_4/Содержимое по категориям/1_Веб-программирование/1_3_Обзор JavaScript библиотек.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_4/Содержимое по категориям/2_Карьера в IT-индустрии/2_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_4/Содержимое по категориям/2_Карьера в IT-индустрии/2_1_Как программисту написать эффективное резюме.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_4/Содержимое по категориям/2_Карьера в IT-индустрии/2_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_4/Содержимое по категориям/2_Карьера в IT-индустрии/2_2_Стоит ли проходить курсы по программированию.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_4/Содержимое по категориям/2_Карьера в IT-индустрии/2_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_4/Содержимое по категориям/2_Карьера в IT-индустрии/2_3_Проблемы при найме на работу родственников и друзей.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_4/Содержимое по категориям/3_Искусственный интеллект/3_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_4/Содержимое по категориям/3_Искусственный интеллект/3_1_Process Mining мода или необходимость.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_4/Содержимое по категориям/3_Искусственный интеллект/3_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_4/Содержимое по категориям/3_Искусственный интеллект/3_2_Российскому рынку ИИ дали оценку.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_4/Содержимое по категориям/3_Искусственный интеллект/3_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_4/Содержимое по категориям/3_Искусственный интеллект/3_3_Что такое искусственный интеллект.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_5/default.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_5/django-ckeditor.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_5/pythonanywhere.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_5/Робототехника/4_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_5/Робототехника/4_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_5/Робототехника/4_3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_5/Робототехника/4_4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_5/Робототехника/4_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_5/Робототехника/4_5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_5/Робототехника/4_6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_5/Робототехника/4_7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_5/Робототехника/4_8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_5/Робототехника/4_8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_5/Робототехника/4_9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_5/Робототехника/4_9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_6/html_css/img/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_6/html_css/img/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_6/html_css/img/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_6/html_css/img/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_6/html_css/img/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_6/html_css/img/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_6/html_css/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_6/html_css/img/tg-image-color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_6/html_css/img/wa-image-color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_6/html_css/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_6/html_css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_6/html_css/thanks.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_6/landing_page.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_6/Слайды.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_6/Справочник по Bot API.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_6/Услуги.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_6/Цены.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_7/API_Weather.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_7/API_курсов_валют.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/FW/FW_7/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_1/__new__.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_1/Парадигмы_ООП.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_1/Практика/0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_1/Практика/01.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_1/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_1/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_1/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_1/Практика/4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_1/Практика/5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_1/Функции для работы с атрубутами класса или его экземплярами.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_2/Практика/0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_2/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_2/Практика/1_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_2/Практика/1_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_2/Практика/2_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_2/Практика/2_2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_3/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_3/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_3/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_3/Практика/4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_3/Практика/5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_4/Перегрузка_арифметических_операторов.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_4/Перегрузка_операторов_сравнения.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_4/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_4/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_4/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_4/Практика/4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_5/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_5/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_5/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_6/Практика/0.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_6/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_6/Практика/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_6/Практика/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_6/Практика/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_7/JSON-Python.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_7/Python-JSON.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_7/csv.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_7/data2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_7/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_7/jsonplaceholder.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_7/Коды_состояния.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_7/Контанты_CSV.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_7/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_7/Практика/2_data2_csv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_8/MVC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_8/OSI.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_8/OSI_TCPIP.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_8/components.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_8/Практика/1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_8/Практика/D_Z_1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_8/Стек протоколов TCP_IP.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_8/Функции объекта socket.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/1_1_односвязный_список.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/1_односвязный_список.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/2_двусвязный_список.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/Array.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/LinkedList.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/List.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/Queue_pop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/Queue_push.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/append.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/class Node.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/insert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/queues.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/stacks_pop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/stacks_push.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/Бинарное дерево.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/Двусвязный список один элемент.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/Двусвязный список пуст.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/Дерево.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/Очередь.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/Размещение элементов массива в памяти.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/Узел двусвязного списка.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ГК_Python/ООП/ООП_9/Элемент_двусвязного_списка.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ДЗ/db2.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ДЗ/db2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Work/ДЗ/db_2.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/carclass.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/electrocar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cars.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_file.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_1.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_4.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filtered_data_file.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fourth-app/programming_blog/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/fourth-app/programming_blog/blog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fourth-app/programming_blog/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/fourth-app/programming_blog/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jinJa.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/news.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/one.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyt/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyt/rect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql_dump.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/student.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/student.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subclasslog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dialog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/text1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/two.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user2.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +602,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
@@ -52,11 +612,14 @@
       <recent name="C:\Users\Пупса\Desktop\ДЗ ПО ПРОГРАММИРОВАНИЮ\дз питон\PYTON\pythonProject" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Пупса\Desktop\ДЗ ПО ПРОГРАММИРОВАНИЮ\дз питон\PYTON\pythonProject\pyt" />
-      <recent name="C:\Users\Пупса\Desktop\ДЗ ПО ПРОГРАММИРОВАНИЮ\дз питон\PYTON\pythonProject\Work" />
+      <recent name="C:\Users\Пупса\Desktop\ДЗ ПО ПРОГРАММИРОВАНИЮ\дз питон\PYTON\pythonProject\seventh-app\shop\users\templates\users" />
+      <recent name="C:\Users\Пупса\Desktop\ДЗ ПО ПРОГРАММИРОВАНИЮ\дз питон\PYTON\pythonProject\fifth-app\landing_page\cms\templates\cms\static\css" />
+      <recent name="C:\Users\Пупса\Desktop\ДЗ ПО ПРОГРАММИРОВАНИЮ\дз питон\PYTON\pythonProject\fourth-app\programming_blog\blog" />
+      <recent name="C:\Users\Пупса\Desktop\ДЗ ПО ПРОГРАММИРОВАНИЮ\дз питон\PYTON\pythonProject\first-app\password_generator_project\generator\templates\generator" />
+      <recent name="C:\Users\Пупса\Desktop\ДЗ ПО ПРОГРАММИРОВАНИЮ\дз питон\PYTON\pythonProject\tasks\static\css" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.jinJa (1)">
+  <component name="RunManager" selected="Python.parser">
     <configuration name="HW" type="PythonConfigurationType" factoryName="Python">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,7 +641,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="aaa" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -90,7 +653,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/example.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aaa.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -99,7 +662,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="jinJa (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -107,11 +670,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tasks" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jinJa.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tasks/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -120,7 +683,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="jinJa" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="parser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -128,11 +691,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HomeWork" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/1project" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HomeWork/jinJa.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1project/parser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,28 +704,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="project_articles" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pythonProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Пупса\Desktop\ДЗ ПО ПРОГРАММИРОВАНИЮ\дз питон\PYTON\pythonProject\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/articles/project_articles.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ssss" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="parsers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -170,11 +712,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/articles" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/eighth-app/service_vacancies/service" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/articles/ssss.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/eighth-app/service_vacancies/service/parsers.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run_service" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/eighth-app/service_vacancies" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/eighth-app/service_vacancies/run_service.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -185,19 +748,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.HW" />
-      <item itemvalue="Python.jinJa" />
-      <item itemvalue="Python.jinJa (1)" />
-      <item itemvalue="Python.example" />
-      <item itemvalue="Python.project_articles" />
-      <item itemvalue="Python.ssss" />
+      <item itemvalue="Python.aaa" />
+      <item itemvalue="Python.app" />
+      <item itemvalue="Python.parser" />
+      <item itemvalue="Python.parsers" />
+      <item itemvalue="Python.run_service" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.jinJa (1)" />
-        <item itemvalue="Python.jinJa" />
-        <item itemvalue="Python.example" />
-        <item itemvalue="Python.project_articles" />
-        <item itemvalue="Python.ssss" />
+        <item itemvalue="Python.parser" />
+        <item itemvalue="Python.aaa" />
+        <item itemvalue="Python.run_service" />
+        <item itemvalue="Python.parsers" />
+        <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
   </component>
@@ -212,6 +775,9 @@
     </task>
     <servers />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -222,5 +788,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/third-app/todos/todos/urls.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

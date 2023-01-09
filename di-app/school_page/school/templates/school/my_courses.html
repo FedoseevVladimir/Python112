@@ -1,0 +1,26 @@
+{% if my_courses %}
+<div class="b_courses">
+    <h4 class="mcourse-header">Мои курсы</h4>
+    <div class="mcourse-all">
+        {% for course in my_courses %}
+        <div class="mc-bg">
+            <div class="mcourse-list">
+                <div class="mcourse-name">
+                    <h4>{{ course.course.name }}</h4>
+                </div>
+                <a href="{{ course.course.tg_url }}">КЛИК -> в Телеграмм</a>
+                <div class="mcourse-img">
+                    <img class="card-img-top"
+                         src="/media/{{ course.course.image }}"
+                         alt="">
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% else %}
+<div class="course_no">
+    <h4>У вас еще нет купленных курсов :(</h4>
+</div>
+{% endif %}

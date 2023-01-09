@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form>
+        <fieldset style="width: 360px;">
+            <legend>Какие языки вы знаете:</legend>
+            <p>
+                <input type="checkbox" checked>Русский <br>
+                <input type="checkbox">Английский <br>
+                <input type="checkbox">Немецкий <br>
+            </p>
+        </fieldset>
+    </form> -->
+    <form action="#file.php" method="get">
+        <p>
+            <label for="name">Введите имя:</label>
+            <input type="text" id="name">
+        </p>
+        <p>
+            <select>
+                <option>Пн</option>
+                <option>вт</option>
+                <option selected>ср</option>
+                <option>чт</option>
+                <option>пт</option>
+                <option>сб</option>
+                <option>вс</option>
+            </select>
+        </p>
+        <p>
+            <select size="7" multiple>
+                <option disabled>День недели</option>
+                <option>Пн</option>
+                <option>вт</option>
+                <option selected>ср</option>
+                <option>чт</option>
+                <option>пт</option>
+                <option>сб</option>
+                <option>вс</option>
+            </select>
+        </p>
+        <p>
+            <select size="4">
+                <optgroup label='Цвет'>
+                    <option>RED</option>
+                    <option>GREEN</option>
+                    <option>BLUE</option>
+                </optgroup>
+                <optgroup label='Тон'>
+                    <option>ligth</option>
+                    <option>black</option>
+                    <option>silver</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>Имя: <input type="text" name='name'
+            placeholder="Имя" size="40" maxlength="6"></p>
+        <p>Пароль: <input type="password"></p>
+        <p><input type="file"></p>
+        <h3>выбирите какие языки вы знаете:</h3>
+        <p>
+                <textarea cols="30" rows="10" placeholder="Текст по умолчанию"></textarea>
+        </p>
+        <p>
+            <input type="checkbox" checked>Русский <br>
+            <input type="checkbox">Английский <br>
+            <input type="checkbox">Немецкий <br>
+        </p>
+        <h3>Ваш пол:</h3>
+        <p>
+            <input type="radio" name="pol"> М <br>
+            <input type="radio" name="pol"> Ж
+        </p>
+        <p>
+            <input type="submit" value="OK">
+            <input type="reset" value="Обновить">
+            <button>Отправить</button>
+            <input type="button" value="Button">
+            <input type="image" src="1.png">
+        </p>
+    </form>
+</body>
+</html>
